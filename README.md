@@ -1,57 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OpenAI Codex Hindi Series Project
+
+> Companion project for the OpenAI Codex Hindi video series.
+
+## About This Project
+
+This repository contains the project built throughout the OpenAI Codex Hindi video series. The series demonstrates how Codex can be used across a complete development workflow—from the initial setup and first code change to Spec-Driven Development, reusable Skills, Subagents, Git Worktrees, MCP, Plugins, deployment, and CI/CD automation.
+
+## Topics Covered
+
+1. Codex introduction, pricing, and usage limits
+2. Codex CLI setup and first prompt
+3. Slash commands in Codex
+4. Codex configuration
+5. Making the first code change with Codex
+6. Project instructions with `AGENTS.md`
+7. Spec-Driven Development with Codex
+8. Building a feature using SDD
+9. Creating custom commands with Codex Skills
+10. Plan Mode in Codex
+11. Running tasks in parallel with Subagents
+12. Working with Git Worktrees
+13. Connecting external tools using MCP
+14. Extending Codex with Plugins
+15. Using Codex in a CI pipeline
 
 ## Getting Started
 
-### Database
-
-Splitsy uses Postgres. Install it locally (e.g. `brew install postgresql@16` on macOS) and make sure the server is running.
-
-Create a database for development and one for tests:
+Clone the repository:
 
 ```bash
-createdb splitsy_dev
-createdb splitsy_test
+git clone https://github.com/telusko-aliens/Splitsy.git
+cd Splitsy
 ```
 
-Copy `.env` (create it if it doesn't exist) and point it at your databases:
-
-```bash
-DATABASE_URL="postgresql://<user>@localhost:5432/splitsy_dev"
-TEST_DATABASE_URL="postgresql://<user>@localhost:5432/splitsy_test"
-```
-
-Apply migrations to the dev database:
-
-```bash
-npx prisma migrate dev
-```
-
-The test database doesn't need migrations run against it — `src/test/database.ts` creates the schema on first use.
-
-### Development server
+Install the dependencies:
 
 ```bash
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the project in Codex:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+codex
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Instructions
 
-## Learn More
+The [`AGENTS.md`](./AGENTS.md) file contains project-specific instructions for Codex, including coding conventions and guidelines that should be followed while working in this repository.
 
-To learn more about Next.js, take a look at the following resources:
+## Watch the Hindi Series
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+YouTube playlist: [Add playlist link](YOUR_YOUTUBE_PLAYLIST_URL)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Useful Resources
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Official Codex documentation](https://learn.chatgpt.com/docs/codex)
+- [Codex CLI documentation](https://learn.chatgpt.com/docs/codex/cli)
+- [AGENTS.md documentation](https://learn.chatgpt.com/docs/agent-configuration/agents-md)
+- [Codex Skills documentation](https://learn.chatgpt.com/docs/build-skills)
+- [MCP documentation](https://learn.chatgpt.com/docs/extend/mcp)
