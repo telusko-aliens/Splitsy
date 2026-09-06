@@ -57,7 +57,7 @@ The [`AGENTS.md`](./AGENTS.md) file contains project-specific instructions for C
 
 ## Watch the Hindi Series
 
-YouTube playlist: [Add playlist link](YOUR_YOUTUBE_PLAYLIST_URL)
+YouTube playlist: [Add playlist link](https://youtube.com/playlist?list=PLW07-6eHu_8M&si=L0fQyIBKjRH8qRID)
 
 ## Useful Resources
 
